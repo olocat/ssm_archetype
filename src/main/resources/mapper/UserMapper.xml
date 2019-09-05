@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.olocat.mapper.UserMapper">
+	<sql id="table">
+		mb_user
+	</sql>
+	<sql id="base">
+		id,username,password
+	</sql>
+	<resultMap id="getUserList" type="com.olocat.pojo.User">
+		<id column="id" property="id"/>
+		<result column="username" property="username"/>
+		<result column="password" property="password"/>
+	</resultMap>
+	<select id="getUser" resultType="com.olocat.pojo.User">
+		select
+		<include refid="base"/>
+		from
+		<include refid="table"/>
+	</select>
+	<select id="getUserList" resultMap="getUserList">
+		select
+		<include refid="base"/>
+		from
+		<include refid="table"/>
+	</select>
+</mapper>
