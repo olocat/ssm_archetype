@@ -12,10 +12,19 @@
 	<title>Index</title>
 </head>
 <body>
-${msg}
-<c:forEach items="${list}" var="user">
-	<p>${user.id}</p>
-	<p>${user.username}</p>
-</c:forEach>
+<table title="User" border="1">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>username</th>
+	</tr>
+	</thead>
+	<c:forEach items="${list}" var="user">
+		<tr>
+			<th>${user.id}</th>
+			<th>${user.username}</th>
+		</tr>
+	</c:forEach>
+</table>
 </body>
 </html>

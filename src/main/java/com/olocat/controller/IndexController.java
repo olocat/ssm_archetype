@@ -14,11 +14,6 @@ public class IndexController {
 	@Autowired(required = false)
 	private UserService userService;
 
-	@RequestMapping("/index")
-	public String  index(Model model){
-		model.addAttribute("msg","hi SpringMvc");
-		return "index";
-	}
 	@RequestMapping("/show")
 	public String show(Model model){
 		List<User> userList = userService.getUserList();
@@ -27,7 +22,6 @@ public class IndexController {
 		}else {
 			System.out.println("userService is null");
 		}
-		model.addAttribute("msg","hi SpringMvc");
 		return "index";
 	}
 }
