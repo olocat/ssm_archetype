@@ -1,3 +1,4 @@
+![IDE](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-brightgreen.svg) ![Java](https://img.shields.io/badge/Java-1.8-blue.svg) ![Database](https://img.shields.io/badge/Database-MySQL-lightgrey.svg) 
 # ssm_archetype
 
 该项目是一个 ssm 项目模板，基本配置文件已经设好，经过简单修改或不修改即可用 
