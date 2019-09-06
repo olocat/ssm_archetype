@@ -15,7 +15,7 @@
 <table title="User" border="1">
 	<thead>
 	<tr>
-		<th>ID</th>
+    <th>ID</th>
 		<th>username</th>
 	</tr>
 	</thead>

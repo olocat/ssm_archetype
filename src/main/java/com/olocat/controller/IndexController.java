@@ -11,17 +11,17 @@ import java.util.List;
 
 @Controller
 public class IndexController {
-	@Autowired(required = false)
-	private UserService userService;
+    @Autowired(required = false)
+    private UserService userService;
 
-	@RequestMapping("/show")
-	public String show(Model model){
-		List<User> userList = userService.getUserList();
-		if(userService != null) {
-			model.addAttribute("list", userList);
-		}else {
-			System.out.println("userService is null");
-		}
-		return "index";
-	}
+    @RequestMapping("/show")
+    public String show(Model model){
+        List<User> userList = userService.getUserList();
+        if(userService != null) {
+            model.addAttribute("list", userList);
+        }else {
+            System.out.println("userService is null");
+        }
+        return "index";
+    }
 }
