@@ -1,7 +1,7 @@
 ![IDE](https://img.shields.io/badge/IDE-IntelliJ%20IDEA-brightgreen.svg) ![Java](https://img.shields.io/badge/Java-1.8-blue.svg) ![Database](https://img.shields.io/badge/Database-MySQL-lightgrey.svg) 
-# ssm_archetype
+# :black_nib: ssm_archetype
 
-该项目是一个 ssm 项目模板，基本配置文件已经设好，经过简单修改或不修改即可用 
+:wrench: 该项目是一个 ssm 项目模板，基本配置文件已经设好，经过简单修改或不修改即可用 
 
 ## 开发工具
 
@@ -9,7 +9,7 @@
 | ----- | -------------------- |    
 | OS    | Windows 10           |    
 | JDK   | 1.8                  |    
-| IDE   | IntelliJ IDEA 2019.3 |    
+| IDE   | IntelliJ IDEA 2019.2 |    
 | Maven | 3.3.1                |    
 | MySQL | 8.0                  |                
 
@@ -31,5 +31,5 @@
 2. 自动或手动使其导入 pom.xml 中的资源
 3. 修改数据库配置文件 src/main/resources/jdbc.properties 将配置改为自己的数据库
 4. （可选）修改配置文件，添加自己所需（该项目已是最简的 ssm 框架了，如无需其它功能可以不做修改）
-5. （可选）在 src/main/webapp/resources/ 下的几个资源文件中删除 .gitkeep 文件（可不删，该文件主要是用来使留空文件夹）
+5. （可选）在 src/main/webapp/assets/** 下的几个资源文件中删除 .gitkeep 文件（可不删，该文件主要是用来使留空文件夹）
 6. 开始写代码吧
